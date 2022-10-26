@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{09A60BA0-6E32-40EB-B49A-D14A512D7AE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{D8CB3431-81D6-4448-B296-E2A9359D505D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "catch_test", "demo\catch_test\catch_test.vcxproj", "{27B715B5-136F-5702-7C76-305E684DF2F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hiberlite_test", "demo\hiberlite_test\hiberlite_test.vcxproj", "{FC275FB3-E8F5-52B9-D189-C3DFBDF62E1E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample", "demo\sample\sample.vcxproj", "{073E391B-F3DF-63F1-DC9A-7745C8DBEA41}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1DFD5A97-8967-0F0E-D2A5-C0B33E4FED62} = {1DFD5A97-8967-0F0E-D2A5-C0B33E4FED62}
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538} = {A78DCBC4-077B-4884-A7F4-D9AF70EDB538}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsqlite3", "thirdparty\sqlite-3.38.5\libsqlite3.vcxproj", "{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libhiberlite", "thirdparty\hiberlite\libhiberlite.vcxproj", "{1DFD5A97-8967-0F0E-D2A5-C0B33E4FED62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27B715B5-136F-5702-7C76-305E684DF2F2}.Debug|x64.ActiveCfg = Debug|x64
+		{27B715B5-136F-5702-7C76-305E684DF2F2}.Debug|x64.Build.0 = Debug|x64
+		{27B715B5-136F-5702-7C76-305E684DF2F2}.Release|x64.ActiveCfg = Release|x64
+		{27B715B5-136F-5702-7C76-305E684DF2F2}.Release|x64.Build.0 = Release|x64
+		{FC275FB3-E8F5-52B9-D189-C3DFBDF62E1E}.Debug|x64.ActiveCfg = Debug|x64
+		{FC275FB3-E8F5-52B9-D189-C3DFBDF62E1E}.Debug|x64.Build.0 = Debug|x64
+		{FC275FB3-E8F5-52B9-D189-C3DFBDF62E1E}.Release|x64.ActiveCfg = Release|x64
+		{FC275FB3-E8F5-52B9-D189-C3DFBDF62E1E}.Release|x64.Build.0 = Release|x64
+		{073E391B-F3DF-63F1-DC9A-7745C8DBEA41}.Debug|x64.ActiveCfg = Debug|x64
+		{073E391B-F3DF-63F1-DC9A-7745C8DBEA41}.Debug|x64.Build.0 = Debug|x64
+		{073E391B-F3DF-63F1-DC9A-7745C8DBEA41}.Release|x64.ActiveCfg = Release|x64
+		{073E391B-F3DF-63F1-DC9A-7745C8DBEA41}.Release|x64.Build.0 = Release|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Debug|x64.ActiveCfg = Debug|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Debug|x64.Build.0 = Debug|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Release|x64.ActiveCfg = Release|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Release|x64.Build.0 = Release|x64
+		{1DFD5A97-8967-0F0E-D2A5-C0B33E4FED62}.Debug|x64.ActiveCfg = Debug|x64
+		{1DFD5A97-8967-0F0E-D2A5-C0B33E4FED62}.Debug|x64.Build.0 = Debug|x64
+		{1DFD5A97-8967-0F0E-D2A5-C0B33E4FED62}.Release|x64.ActiveCfg = Release|x64
+		{1DFD5A97-8967-0F0E-D2A5-C0B33E4FED62}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27B715B5-136F-5702-7C76-305E684DF2F2} = {D8CB3431-81D6-4448-B296-E2A9359D505D}
+		{FC275FB3-E8F5-52B9-D189-C3DFBDF62E1E} = {D8CB3431-81D6-4448-B296-E2A9359D505D}
+		{073E391B-F3DF-63F1-DC9A-7745C8DBEA41} = {D8CB3431-81D6-4448-B296-E2A9359D505D}
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538} = {09A60BA0-6E32-40EB-B49A-D14A512D7AE8}
+		{1DFD5A97-8967-0F0E-D2A5-C0B33E4FED62} = {09A60BA0-6E32-40EB-B49A-D14A512D7AE8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal
